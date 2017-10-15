@@ -1,0 +1,23 @@
+a {
+	color: #0083B0;
+}
+	a:hover,
+	a:active,
+	a:focus,
+	a:focus:active, {
+		color: #005977;
+	}
+
+.lead {
+	color: #474747;
+}
+
+.btn-primary {
+	background-color: #0083B0;
+}
+	.btn-primary:hover,
+	.btn-primary:active,
+	.btn-primary:focus,
+	.btn-primary:focus:active {
+		background-color: #005977;
+	}
