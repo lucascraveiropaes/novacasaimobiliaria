@@ -1,19 +1,107 @@
 html,
 body {
-  height: 100%;
-  background-color: #FFFFFF;
+    height: 100%;
+    background-color: #FFFFFF;
 }
 
-header {
-	display: table;
+header.full-header {
+    display: table;
     width: 100%;
     height: 100%;
     min-height: 100%;
   	background-image: url('../img/bg1-dark.jpg');
 } 
 
+section {
+    background-color: #EAEBEC;
+    color: #FFF;
+    min-height: 100%;
+    padding-bottom: 20px;
+}
+
+.fa-area::before {
+    content: url('../img/area-icon.png');
+    display: block;
+    margin: 0;
+}
+
 .display-5 {
 	font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.1;
 }
+
+.item-list {
+    padding-top: 70px
+}
+
+.card-item {
+    color: #777;
+    margin: 30px;
+    border: 1px solid #eee;
+    -webkit-transition: all 100ms ease-out; 
+       -moz-transition: all 100ms ease-out; 
+         -o-transition: all 100ms ease-out; 
+            transition: all 100ms ease-out;
+}
+    .card-item:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 17px rgba(0, 0, 0, 0.2);
+        border: 1px solid #eee;
+    }
+
+.card-item .carousel {
+    margin: -20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 17px rgba(0, 0, 0, 0.2);
+}
+.card-item .carousel img {
+    width: 100%;
+}
+
+.card-item .card-body {
+    padding-top: 40px;
+}
+    .card-title {
+        color: #3d3d3d;
+        font-weight: 300;
+        margin-bottom: 7px;
+    }
+    .card-subtitle {
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 10px;       
+    }
+    .card-text {
+        text-align: justify;
+        margin: 20px auto;
+    }
+    .card-options {
+        width: 100%;
+        margin-top: 10px;
+        padding: 0px;
+        color: #00897B;
+    }
+        .card-options .card-price {
+            float: right;
+        }
+        
+    .card-info {
+        margin-top: 30px;
+        font-size: 0.8em;
+        display: -webkit-flex; /* Safari */
+        -webkit-justify-content: space-between; /* Safari 6.1+ */
+        display: flex;
+        justify-content: space-between;
+    }
+        .card-info span {
+            padding: 5px;
+            border-bottom: 2px solid #777;
+        }
+        .card-info span:first-child {
+            margin-left: 0px;
+        }
+        .card-info span:last-child {
+            margin-right: 0px;
+        }
+            .card-info span i {
+                margin-right: 8px
+            }
